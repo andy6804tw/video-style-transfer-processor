@@ -1,0 +1,1 @@
+document.getElementById('imgDemo').src=`./image/demo${Math.floor(Math.random() * 4)+1}.gif`;
