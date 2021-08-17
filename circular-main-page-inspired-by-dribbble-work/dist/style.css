@@ -279,6 +279,12 @@ section .text_content i {
   section .item {
     width: 35%;
   }
+  .right_side > div {
+    height: 78vh;
+  }
+  .right_side > div:after {
+    height: 80vh;
+  }
 }
 @media only screen and (max-width: 725px) {
   section .item {
@@ -286,6 +292,9 @@ section .text_content i {
   }
   header {
     justify-content: space-between;
+  }
+  .right_side > div {
+    padding-top: 10vh;
   }
 }
 @media (max-width: 400px) {
