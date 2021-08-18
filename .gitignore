@@ -1,5 +1,5 @@
 .DS_Store
-/API/app/static/output.mp4
+/API/app/static/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

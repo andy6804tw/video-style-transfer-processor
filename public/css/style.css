@@ -59,7 +59,6 @@ main {
   color: transparent;
 }
 .left_side h4 {
-  width: 80%;
   font-size: 0.9em;
   font-weight: 500;
   line-height: 22px;
@@ -163,11 +162,11 @@ p.show_more i {
   background-image: radial-gradient(circle at 3px 3px, #50badc 3px, transparent 0);
   background-size: 20px 20px;
 }
-section {
+.section-intro {
   display: flex;
   margin: 150px 10%;
 }
-section .item {
+.section-intro .item {
   -webkit-box-shadow: 5px 5px 20px -6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 5px 5px 20px -6px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px 20px -6px rgba(0, 0, 0, 0.25);
@@ -175,7 +174,7 @@ section .item {
   padding: 40px 30px;
   width: 40%;
 }
-section .item button {
+.section-intro .item button {
   padding: 20px;
   border-radius: 40px;
   font-size: 20px;
@@ -183,13 +182,13 @@ section .item button {
   -moz-box-shadow: 0px 0px 30px 0px rgba(80, 186, 220, 0.9);
   box-shadow: 0px 0px 30px 0px rgba(80, 186, 220, 0.9);
 }
-section .item h5 {
+.section-intro .item h5 {
   font-weight: 700;
   font-size: 15px;
   position: relative;
   margin-bottom: 50px;
 }
-section .item h5::after {
+.section-intro .item h5::after {
   content: '';
   width: 60px;
   height: 3px;
@@ -200,30 +199,30 @@ section .item h5::after {
   background: -webkit-linear-gradient(to right top, #57b9da, #50badc, #20a0ca);
   background: linear-gradient(to right top, #57b9da, #50badc, #20a0ca);
 }
-section .item p {
+.section-intro .item p {
   color: #878787;
   line-height: 25px;
 }
-section .text_content {
+.section-intro .text_content {
   margin-left: 30px;
 }
-section .text_content h2 {
+.section-intro .text_content h2 {
   font-weight: 700;
   font-size: 35px;
 }
-section .text_content p {
+.section-intro .text_content p {
   width: 80%;
   color: #878787;
   line-height: 25px;
 }
-section .text_content button {
+.section-intro .text_content button {
   padding: 10px;
 }
-section .text_content button:first-of-type {
+.section-intro .text_content button:first-of-type {
   padding: 15px 30px;
   margin: 20px 10px 0 0;
 }
-section .text_content i {
+.section-intro .text_content i {
   font-size: 20px;
   margin-left: 4px;
   color: transparent;
@@ -258,25 +257,25 @@ section .text_content i {
     top: -12px;
     height: 70vh;
   }
-  section {
+  .section-intro {
     margin-top: 30px;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
   }
-  section .item {
+  .section-intro .item {
     width: 35%;
   }
-  section .text_content {
+  .section-intro .text_content {
     float: left;
   }
 }
 @media only screen and (max-width: 1220px) {
-  section {
+  .section-intro {
     margin-top: 75px;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
   }
-  section .item {
+  .section-intro .item {
     width: 35%;
   }
   .right_side > div {
@@ -287,7 +286,7 @@ section .text_content i {
   }
 }
 @media only screen and (max-width: 725px) {
-  section .item {
+  .section-intro .item {
     width: 100%;
   }
   header {
