@@ -70,10 +70,17 @@ def process_img(img):
 #         writer.append_data(result)
 #     writer.close()
 
-def predict(styleImage, reader):
-    # load style image
-    style_image = np.array(styleImage, dtype='f')/255
-    style_image = process_img(style_image)
+def predict(styleImage='', reader=''):
+    if(styleImage=='' and reader==''):
+        print('--API unit test for GET Router--')
+        # load style image
+        style_image = load_img('app/demo/style1.png')
+        # load video
+        reader = imageio.get_reader('app/demo/test.MOV')
+    else:
+        # load style image
+        style_image = np.array(styleImage, dtype='f')/255
+        style_image = process_img(style_image)
     # get video fps
     fps = reader.get_meta_data()['fps']
     writer = imageio.get_writer('app/static/output.mp4', fps=fps)
