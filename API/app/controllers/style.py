@@ -20,11 +20,11 @@ def styleGetTest():
 @style.route('', methods=['POST'])
 def stylePost():
   # load style image
-  styleImage = request.files['styleImage'].read()
+  styleImage = request.files['imageFile'].read()
   styleImage = np.fromstring(styleImage, np.uint8)
   styleImage = cv2.imdecode(styleImage, cv2.IMREAD_COLOR)[:,:,::-1]
   # load video
-  videoFile = request.files['file']
+  videoFile = request.files['videoFile']
   # get file enxention
   fileExtention = '.'+videoFile.filename.split('.')[1]
   # make temp file
