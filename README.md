@@ -7,9 +7,11 @@
 ![](/screenshot/img01.png)
 
 ## Help and Support
-### colab hands-on
+### Tutorial
+In this project we are use fast style transfer technology. Based on the model code in [magenta](https://github.com/tensorflow/magenta/tree/master/magenta/models/arbitrary_image_stylization) and the publication:[Exploring the structure of a real-time, arbitrary neural artistic stylization network](https://arxiv.org/abs/1705.06830). Golnaz Ghiasi, Honglak Lee, Manjunath Kudlur, Vincent Dumoulin, Jonathon Shlens, Proceedings of the British Machine Vision Conference (BMVC), 2017. 
 
-| Image transfer                     | Video transfer                          |
+We have colab hands-on about the fast style transfer implement by TF-Hub module. Enjoy learning and have fun!
+| Image style transfer                     | Video style transfer                          |
 |--------------------------------------|--------------------------------------|
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andy6804tw/video-style-transfer-processor/blob/main/example/image_transfer(colab).ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andy6804tw/video-style-transfer-processor/blob/main/example/video_transfer(colab).ipynb) |
 
