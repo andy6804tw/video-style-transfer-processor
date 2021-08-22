@@ -4,4 +4,4 @@ Flask-Uploads==0.2.1
 opencv-python
 tensorflow_hub
 gunicorn
-tensorflow==2.5.0
+tensorflow-cpu==2.5.0
