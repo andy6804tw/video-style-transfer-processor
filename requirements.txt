@@ -1,9 +1,0 @@
-Flask==1.1.1
-Flask-Cors==3.0.8
-Flask-Uploads==0.2.1
-gunicorn
-opencv-python
-imageio
-tensorflow-cpu==2.5.0
-tensorflow_hub
-

@@ -12,6 +12,11 @@ pip install dlib==19.9.0
 pip install opencv-contrib-python
 ```
 
+```
+gunicorn run:app --timeout 0
+```
+
+
 
 [Video Streaming Using Flask and OpenCV](https://medium.datadriveninvestor.com/video-streaming-using-flask-and-opencv-c464bf8473d6)
 

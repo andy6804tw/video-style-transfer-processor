@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+# import os 
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 import numpy as np
 import imageio
 import tensorflow_hub as hub
 
 
-gpus = tf.config.experimental.list_physical_devices('GPU')
-for gpu in gpus:
-    tf.config.experimental.set_memory_growth(gpu, True)
+# gpus = tf.config.experimental.list_physical_devices('GPU')
+# for gpu in gpus:
+#     tf.config.experimental.set_memory_growth(gpu, True)
 
 # load TF Hub Fast Style Transfer model
 hub_model = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
@@ -91,6 +92,7 @@ def predict(styleImage='', reader=''):
         result = tensor_to_image(stylized_image)
         writer.append_data(result)
     writer.close()
+    print('ok')
 
 
 

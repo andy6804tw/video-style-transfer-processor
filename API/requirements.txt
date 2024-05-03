@@ -1,9 +1,10 @@
-Flask==1.1.1
+Flask==3.0.3
 Flask-Cors==3.0.8
 Flask-Uploads==0.2.1
 gunicorn
 opencv-python
 imageio
-tensorflow==2.3.0
+imageio-ffmpeg
+tensorflow==2.13.0
 tensorflow_hub
 
