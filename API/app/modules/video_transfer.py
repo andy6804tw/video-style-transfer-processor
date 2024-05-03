@@ -69,7 +69,7 @@ def process_img(img):
 #     writer.close()
 
 def predict(styleImage='', reader=''):
-    if(styleImage=='' and reader==''):
+    if not styleImage and not reader:
         print('--API unit test for GET Router--')
         # load style image
         style_image = load_img('app/demo/style1.png')
