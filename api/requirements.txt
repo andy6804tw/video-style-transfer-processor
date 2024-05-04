@@ -1,1 +1,10 @@
-Flask
+Flask==3.0.3
+Flask-Cors==3.0.8
+Flask-Uploads==0.2.1
+gunicorn
+opencv-python
+imageio
+imageio-ffmpeg
+tensorflow==2.13.0
+tensorflow_hub
+
