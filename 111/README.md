@@ -13,6 +13,7 @@ pip install opencv-contrib-python
 ```
 
 ```
+# rendwe部署https://hackmd.io/@KszW-VhuTFiRIBfviwcT7Q/r1ZCbfSLj
 gunicorn run:app --timeout 0
 ```
 
